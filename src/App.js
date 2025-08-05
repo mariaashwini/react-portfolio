@@ -10,7 +10,7 @@ import "./output.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/react-portfolio">
          <Sidebar />
          <Routes>
 <Route path="/" element={<Home/>}/>
