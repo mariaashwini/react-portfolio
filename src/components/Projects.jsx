@@ -6,42 +6,42 @@ const portfolioData = {
     {
       name: "GlobalEdico",
       link: "https://www.globaledico.com/",
-      image: "/project_images/globaledico.png",
+      image: "./project_images/globaledico.png",
     },
     {
       name: "Friends In Christ",
       link: "https://friendsinchrist.in/",
-      image: "/project_images/friends_in_christ.png",
+      image: "./project_images/friends_in_christ.png",
     },
   ],
   logos: [
     {
       name: "Time 2 Trip",
-      image: "/project_images/time2trip.png",
+      image: "./project_images/time2trip.png",
     },
     {
       name: "Travel Time",
-      image: "/project_images/travel_time.png",
+      image: "./project_images/travel_time.png",
     },
   ],
   banners: [
     {
       name: "Time 2 Trip",
-      image: "/project_images/time2trip_banner.jpg",
+      image: "./project_images/time2trip_banner.jpg",
     },
   ],
-  brochures: [
-    {
-      name: "Sai Impex",
-      image: "/images/portfolio/brochure-1.png",
-      file: "/brochure_11.pdf",
-    },
-    {
-      name: "Seal Grip Pack",
-      image: "/images/portfolio/brochure-2.png",
-      file: "/brochure_2.pdf",
-    },
-  ],
+  // brochures: [
+  //   {
+  //     name: "Sai Impex",
+  //     image: "/images/portfolio/brochure-1.png",
+  //     file: "/brochure_11.pdf",
+  //   },
+  //   {
+  //     name: "Seal Grip Pack",
+  //     image: "/images/portfolio/brochure-2.png",
+  //     file: "/brochure_2.pdf",
+  //   },
+  // ],
 };
 
 const Section = ({ title, items, type }) => (
@@ -51,7 +51,7 @@ const Section = ({ title, items, type }) => (
     </div>
     <div className="flex flex-wrap gap-6 mb-8">
       {items.map((item, index) => (
-        <div key={index} className="w-full sm:w-1/2 md:w-1/3">
+        <div key={index} className="responsive-box">
           <div className="shadow-lg p-4 rounded-lg bg-white">
             <div className="mb-2">
               {type === "website" && (
@@ -74,7 +74,7 @@ const Section = ({ title, items, type }) => (
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-auto"
+                  className="w-[300px] h-[200px]"
                 />
               )}
               {type === "brochure" && (
