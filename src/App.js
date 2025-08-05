@@ -6,6 +6,8 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
 import About from "./components/About";
+import Layout from "./components/Layout";
+
 import "./output.css";
 
 function App() {
@@ -13,13 +15,13 @@ function App() {
     <BrowserRouter basename="/react-portfolio">
       <Sidebar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/tech-stack" element={<TechStack />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/" element={<Layout><Home /></Layout>} />
+        <Route path="/home" element={<Layout><Home /></Layout>} />
+        <Route path="/about" element={<Layout><About /></Layout>} />
+        <Route path="/tech-stack" element={<Layout><TechStack /></Layout>} />
+        <Route path="/contact" element={<Layout><Contact /></Layout>} />
+        <Route path="/resume" element={<Layout><Resume /></Layout>} />
+        <Route path="/projects" element={<Layout><Projects /></Layout>} />
       </Routes>
     </BrowserRouter>
   );
