@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Home from "./components/Home";
 import TechStack from "./components/TechStack";
@@ -14,7 +14,8 @@ function App() {
   return (
     <BrowserRouter basename="/react-portfolio">
       <Routes>
-        <Route path="/react-portfolio" element={<Layout><Home /></Layout>} />
+        {/* <Route path="/" element={<Layout><Home /></Layout>} /> */}
+        <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Layout><Home /></Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
         <Route path="/tech-stack" element={<Layout><TechStack /></Layout>} />
