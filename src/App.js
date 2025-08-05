@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter basename="/react-portfolio">
       <Routes>
         {/* <Route path="/" element={<Layout><Home /></Layout>} /> */}
-        <Route path="/" element={<Navigate to="/home" replace />} />
+        <Route path="/" element={<Navigate to="home" replace />} />
         <Route path="/home" element={<Layout><Home /></Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
         <Route path="/tech-stack" element={<Layout><TechStack /></Layout>} />
