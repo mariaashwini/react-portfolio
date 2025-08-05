@@ -39,3 +39,6 @@
 .animate-slide-section {
   animation: slideSection 0.8s ease forwards;
 }
+.responsive-box {
+  @apply w-full sm:w-1/2 md:w-1/3;
+}
