@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Sidebar from "./components/Sidebar";
 import Home from "./components/Home";
 import TechStack from "./components/TechStack";
 import Contact from "./components/Contact";

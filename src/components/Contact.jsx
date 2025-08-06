@@ -34,7 +34,7 @@ const Contact = () => {
           <div className="flex flex-col items-center bg-white p-4 rounded shadow-sm">
             <FaGithub className="text-xl text-[#ec1839] mb-2" />
             <h4 className="font-semibold">Github</h4>
-              <a href="https://github.com/mariaashwini" target="_blank" className="hover:underline">
+              <a href="https://github.com/mariaashwini" target="_blank" rel="noreferrer" className="hover:underline">
               github.com/mariaashwini
             </a>
           </div>
