@@ -26,7 +26,7 @@ const Contact = () => {
           <div className="flex flex-col items-center bg-white p-4 rounded shadow-sm">
             <FaLinkedin className="text-xl text-[#ec1839] mb-2" />
             <h4 className="font-semibold">LinkedIn</h4>
-             <a href="https://linkedin.com/in/maria-ashwini" target="_blank" className="hover:underline">
+             <a href="https://linkedin.com/in/maria-ashwini" target="_blank" rel="noreferrer" className="hover:underline">
               linkedin.com/in/maria-ashwini
             </a>
           </div>
