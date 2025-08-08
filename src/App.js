@@ -11,7 +11,7 @@ import "./output.css";
 
 function App() {
   return (
-    <BrowserRouter basename="/react-portfolio">
+    <BrowserRouter>
       <Routes>
         {/* <Route path="/" element={<Layout><Home /></Layout>} /> */}
         <Route path="/" element={<Navigate to="home" replace />} />
