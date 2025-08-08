@@ -37,7 +37,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="two-columns-grid">
           {/* Personal Info */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Personal Info</h4>
@@ -94,7 +94,7 @@ const About = () => {
           {/* Skills */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Skills</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div  className="two-columns-grid">
               {skills.map(({ name, percent }, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-1">
@@ -113,7 +113,7 @@ const About = () => {
         </div>
 
         {/* Education & Experience */}
-        <div className="grid md:grid-cols-2 gap-6 mt-10">
+        <div  className="two-columns-grid mt-10">
           <div>
             <h3 className="text-2xl text-[#302e4d] font-bold mb-4">Education</h3>
             <div className="space-y-6 border-l-4 border-[#ec1839] bg-white p-4 rounded shadow-lg">

@@ -21,7 +21,7 @@ const TechStack = () => {
           Tech Stack
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div className="two-columns-grid">
         {skills.map((skill, index) => (
           <div key={index} className="bg-white p-4 rounded shadow-lg">
             <div className="flex justify-between">
