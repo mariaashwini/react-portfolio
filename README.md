@@ -28,6 +28,6 @@ A modern, responsive portfolio website built with **React** and **Tailwind CSS**
 ---
 
 ## 📬 Contact
-- **Email:** mariaashwini.dev@gmail.com
+- **Email:** mariaashwini06@gmail.com
 - **LinkedIn:** [linkedin.com/in/mariaashwini](https://linkedin.com/in/mariaashwini)
 - **GitHub:** [github.com/mariaashwini](https://github.com/mariaashwini)
