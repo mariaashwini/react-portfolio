@@ -2,6 +2,18 @@
 import React from "react";
 
 const portfolioData = {
+    projects: [
+    {
+      name: "Job Tracker App",
+      link: "https://career-track.netlify.app/",
+      image: "./project_images/job_tracker_app.png",
+    },
+    {
+      name: "React Training",
+      link: "https://mariaashwini.github.io/react-training/",
+      image: "./project_images/react_training.png",
+    },
+  ],
   websites: [
     {
       name: "GlobalEdico",
@@ -54,6 +66,15 @@ const Section = ({ title, items, type }) => (
         <div key={index} className="responsive-box">
           <div className="shadow-lg p-4 rounded-lg bg-white">
             <div className="mb-2">
+              {type === "projects" && (
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-[426px] h-[200px]"
+                  />
+                </a>
+              )}
               {type === "website" && (
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
                   <img
@@ -112,6 +133,11 @@ const Projects = () => {
             My Last Projects:
           </h2>
         </div>
+         <Section
+          title="Projects"
+          items={portfolioData.projects}
+          type="projects"
+        />
         <Section
           title="Websites"
           items={portfolioData.websites}
